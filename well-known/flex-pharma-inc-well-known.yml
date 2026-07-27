@@ -1,0 +1,44 @@
+generated: '2026-07-20'
+method: probed
+source: live HTTPS probes of https://www.flex-pharma.com
+host: https://www.flex-pharma.com
+note: >-
+  Every /.well-known/ path returns HTTP 200 with the site homepage HTML
+  (identical 11,109-byte text/html body), i.e. the host serves soft-404s and
+  publishes no real discovery documents. No document was saved and no
+  WellKnown/SecurityTxt pointer was wired, because nothing genuine was found.
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  soft_404: true
+  content_type: text/html
+- path: /.well-known/openid-configuration
+  status: 200
+  soft_404: true
+  content_type: text/html
+- path: /.well-known/oauth-authorization-server
+  status: 200
+  soft_404: true
+  content_type: text/html
+- path: /.well-known/api-catalog
+  status: 200
+  soft_404: true
+  content_type: text/html
+- path: /.well-known/ai-plugin.json
+  status: 200
+  soft_404: true
+  content_type: text/html
+- path: /llms.txt
+  status: 200
+  soft_404: true
+  content_type: text/html
+- path: /openapi.json
+  status: 200
+  soft_404: true
+  content_type: text/html
+- path: /robots.txt
+  status: 200
+  soft_404: false
+  content_type: text/plain
+  body: "User-agent: *\nAllow: /"
+found: []

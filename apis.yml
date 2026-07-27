@@ -1,8 +1,25 @@
 aid: flex-pharma-inc
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/flex-pharma-inc.png
 name: Flex Pharma, Inc.
-description: 'Flex Pharma, Inc. is a company surfaced as a portfolio company of bessemer-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Flex Pharma, Inc. entered the API Evangelist network as a healthcare portfolio lead of
+  bessemer-venture-partners. Enrichment on 2026-07-20 found no API, developer program, SDK, or machine-readable
+  surface of any kind. The flex-pharma.com domain now resolves (via Cloudflare) to a consumer online-pharmacy
+  storefront retailing generic and brand erectile-dysfunction medication (tadalafil, sildenafil), whose About
+  page invokes Rockefeller University professor Dr. Rod MacKinnon — a founder associated with the original
+  Flex Pharma biotech — while publishing no corporate entity name, address, or registration details. Treat the
+  present site as unverified and distinct from the original venture-backed company. Only Terms, Privacy, and a
+  Contact page were verified as live; every /.well-known/ path soft-404s to the homepage.'
 url: https://raw.githubusercontent.com/api-evangelist/flex-pharma-inc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +27,26 @@ x-backed-by:
 - bessemer-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+x-identity-note: >-
+  The domain flex-pharma.com no longer presents the venture-backed biotech this record was created
+  for; it serves an unrelated consumer online-pharmacy storefront that references the biotech's
+  founder. Verified by live fetch on 2026-07-20. Do not treat Website as a corporate identity claim.
 tags:
 - Company
 - Healthcare
+- Pharmaceuticals
+- Biotechnology
+- Life Sciences
+- E-Commerce
+- No API
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +54,13 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/flex-pharma-inc-domain-security.yml
 - type: Website
   url: https://www.flex-pharma.com
+- type: TermsOfService
+  url: https://www.flex-pharma.com/terms.php
+- type: PrivacyPolicy
+  url: https://www.flex-pharma.com/privacy.php
+- type: Support
+  url: https://www.flex-pharma.com/contact.php
