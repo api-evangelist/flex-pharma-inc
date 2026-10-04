@@ -22,7 +22,7 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/flex-pharma-inc.png
-name: Flex Pharma, Inc.
+name: Flex Pharma
 description: 'Flex Pharma, Inc. entered the API Evangelist network as a healthcare portfolio lead of
   bessemer-venture-partners. Enrichment on 2026-07-20 found no API, developer program, SDK, or machine-readable
   surface of any kind. The flex-pharma.com domain now resolves (via Cloudflare) to a consumer online-pharmacy
@@ -75,3 +75,4 @@ common:
   url: https://www.flex-pharma.com/privacy.php
 - type: Support
   url: https://www.flex-pharma.com/contact.php
+x-legal-name: Flex Pharma, Inc.
